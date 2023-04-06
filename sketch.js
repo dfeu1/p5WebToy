@@ -22,7 +22,7 @@ function setup() {
 function startToy() {
   startButton.hide();
   clearButton = createButton("Clear");
-  clearButton.position(width/2 - 25, height - 900);
+  clearButton.position(width/2 - 25, height - 600);
   clearButton.mousePressed(clearCanvas);
 
   ellipseButton = createButton("Draw with Circles");
