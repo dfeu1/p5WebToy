@@ -6,7 +6,7 @@ let titleText = "Daniel Feuer's p5JS WebToy";
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(110, 217, 220);
-  startButton = createButton("Start Rolling");
+  startButton = createButton("Create the most artistic picture your heart can desire.");
   startButton.position(width/2 - startButton.width/2, height/2 + 50);
   startButton.mousePressed(startToy);
 
@@ -64,7 +64,12 @@ function draw() {
   console.log("draw");
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function clearCanvas() {
   clear(); // clear the canvas
   background(110, 217, 220); // set the background color
 }
+
